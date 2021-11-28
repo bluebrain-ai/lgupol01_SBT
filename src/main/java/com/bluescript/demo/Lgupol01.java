@@ -63,7 +63,6 @@ import com.bluescript.demo.model.CaClaim;
 
 public class Lgupol01 {
 
-     
     @Autowired
     private WsHeader wsHeader;
     @Autowired
@@ -120,7 +119,7 @@ public class Lgupol01 {
 
         // }
         BeanUtils.copyProperties(payload, dfhcommarea);
-        log.warn("payload :"+dfhcommarea);
+        log.warn("payload :" + dfhcommarea);
         dfhcommarea.setCaReturnCode(00);
         emVariable.setEmCusnum(String.valueOf(dfhcommarea.getCaCustomerNum()));
         emVariable.setEmPolnum(String.valueOf(caPolicyRequest.getCaPolicyNum()));
